@@ -15,9 +15,9 @@
     <img src="images/trybewarts-header-logo.svg" alt="logotipo" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" method="get" class="trybewarts-login">
-        <input type="text" name="email" id="email-btn" placeholder="Login">
-        <input type="text" name="senha" id="senha-btn" placeholder="Senha">
-        <button type="submit" name="entrar" id='submit-btn'>Entrar</button>
+      <input type="text" name="email" id="email-btn" placeholder="Login">
+      <input type="text" name="senha" id="senha-btn" placeholder="Senha">
+      <button type="submit" name="entrar" id='submit-btn'>Entrar</button>
       </label>
     </form>
   </header>
@@ -44,15 +44,37 @@
           </select>
         </div>
       </div>
+      <label for="family" id="label-family">Qual sua família?</label>
+      <div class="grouped fields">
+        <label for="frontend">
+          <div class="field">
+            <div class="ui radio ">
+              <input type="radio" name="family" id="frontend" value="Frontend" tabindex="0" class="hidden"> Frontend
+            </div>
+          </div>
+        </label>
+        <label for="backEnd">
+          <div class="field">
+            <div class="ui radio ">
+              <input type="radio" name="family" id="backEnd" value="Backend"> Backend
+            </div>
+          </div>
+        </label>
+        <label for="fullStack">
+          <div class="field">
+            <div class="ui radio ">
+              <input type="radio" name="family" id="fullStack" value="FullStack"> FullStack
+            </div>
+          </div>
+        </label>
+      </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="logo trybe" id="trybewarts-forms-logo">
-    
+
   </main>
   <script src="script.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 </body>
 
