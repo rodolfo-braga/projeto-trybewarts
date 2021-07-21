@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Trybewarts</title>
 </head>
@@ -21,21 +22,38 @@
     </form>
   </header>
   <main>
-    <form action="" id="evaluation-form">
-      <input type="text" name="nome" id="input-name" placeholder="Nome">
-      <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
-      <input type="email" name="email" id="input-email" placeholder="Email">
-      <select name="" id="house">
-        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-        <option value="Corvinode" id="corvinode-house">Corvinode</option>
-        <option value="Pytherina" id="pytherina-house">Pytherina</option>
-      </select>
+    <form action="" id="evaluation-form" class="ui form">
+      <div class="fields">
+        <div class="field">
+          <input type="text" name="nome" id="input-name" placeholder="Nome">
+        </div>
+        <div class="field">
+          <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+        </div>
+      </div>
+      <div class="fields">
+        <div class="field">
+          <input type="email" name="email" id="input-email" placeholder="Email">
+        </div>
+        <div class="field">
+          <select name="" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
+      </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="logo trybe" id="trybewarts-forms-logo">
     
   </main>
   <script src="script.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 </body>
 
 </html>
