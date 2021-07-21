@@ -49,3 +49,7 @@ main {
 #label-content {
   width: 100%;
 }
+
+#rateValue {
+  display: flex;
+}
