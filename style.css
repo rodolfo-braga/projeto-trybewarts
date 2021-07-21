@@ -17,10 +17,15 @@
 
 main {
   display: flex;
+  justify-content: flex-end;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
