@@ -44,30 +44,64 @@
           </select>
         </div>
       </div>
-      <label for="family" id="label-family">Qual sua família?</label>
-      <div class="grouped fields">
-        <label for="frontend">
-          <div class="field">
-            <div class="ui radio ">
-              <input type="radio" name="family" id="frontend" value="Frontend" tabindex="0" class="hidden"> Frontend
+      <section class="options">
+        <section class="family">
+          <label for="" id="label-family">Qual sua família?</label>
+            <div class="grouped fields">
+              <div class="field">
+                <div class="ui radio ">
+                  <input type="radio" name="family" id="frontend" value="Frontend" tabindex="0" class="hidden">
+                  <label for="frontend">Frontend</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio ">
+                  <input type="radio" name="family" id="backEnd" value="Backend"> 
+                  <label for="backEnd">Backend</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio ">
+                  <input type="radio" name="family" id="fullStack" value="FullStack">
+                  <label for="fullStack">FullStack</label>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="content">
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="grouped fields"></div>
+            <div class="inline fields">
+              <div class="field">
+                <input type="checkbox" name="" id="hofs" value="HoFs" class="ui checkbox subject">
+                <label for="hofs">HoFs</label>
+              </div>
+              <div class="field">
+                <input type="checkbox" name="" id="jest" value="Jest" class="ui checkbox subject">
+                <label for="jest">Jest</label>
+              </div>
+              <div class="field">
+                <input type="checkbox" name="" id="promises" value="Promises" class="ui checkbox subject">
+                <label for="promises">Promises</label>
+              </div>
+            </div>
+            <div class="inline fields">
+              <div class="field">
+                <input type="checkbox" name="" id="react" value="React" class="ui checkbox subject">
+                <label for="react">React</label>
+              </div>
+              <div class="field">
+                <input type="checkbox" name="" id="sql" value="SQL" class="ui checkbox subject">
+                <label for="sql">SQL</label>
+              </div>
+              <div class="field">
+                <input type="checkbox" name="" id="python" value="Python" class="ui checkbox subject">
+                <label for="python">Python</label>
+              </div>
             </div>
           </div>
-        </label>
-        <label for="backEnd">
-          <div class="field">
-            <div class="ui radio ">
-              <input type="radio" name="family" id="backEnd" value="Backend"> Backend
-            </div>
-          </div>
-        </label>
-        <label for="fullStack">
-          <div class="field">
-            <div class="ui radio ">
-              <input type="radio" name="family" id="fullStack" value="FullStack"> FullStack
-            </div>
-          </div>
-        </label>
-      </div>
+        </section>
+      </section>
     </form>
     <img src="images/trybewarts-colored.svg" alt="logo trybe" id="trybewarts-forms-logo">
 
