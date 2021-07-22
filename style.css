@@ -17,7 +17,9 @@
 
 main {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  flex-flow: column wrap ;
+  height: 800px;
 }
 
 #evaluation-form {
@@ -26,9 +28,11 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+img#trybewarts-forms-logo {
+  height: 450px;
+  width: 450px;
 }
+  
 
 .options {
   display: flex;
