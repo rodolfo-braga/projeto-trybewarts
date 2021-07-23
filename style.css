@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -9,6 +10,12 @@
   flex-basis: 100%;
   justify-content: space-between;
   align-items: center;
+  height: 110px;
+}
+
+.trybewarts-header-logo {
+  height: 80px;
+  width: 80px;
 }
 
 .trybewarts-login {
@@ -20,6 +27,7 @@ main {
   justify-content: flex-start;
   flex-flow: column wrap;
   height: 800px;
+  padding: 30px;
 }
 
 #evaluation-form {
@@ -55,4 +63,27 @@ main {
 
 #rateValue {
   display: flex;
+  margin: 15px 0;
+  align-items: center;
+}
+
+#rate-radios {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20px;
+}
+
+#agreement-container {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#agreement {
+  margin-left: 7px;
+}
+
+footer {
+  text-align: center;
 }
