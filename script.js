@@ -43,7 +43,7 @@ function getFamilyChecked() {
   let familyChecked;
 
   for (let index = 0; index < getFamilies.length; index += 1) {
-    if (getFamilies[index].classList.contains('checked')) {
+    if (getFamilies[index].firstElementChild.checked) {
       familyChecked = getFamilies[index].firstElementChild.value;
     }
   }
@@ -56,11 +56,10 @@ function getSubjectsChecked() {
   const subjectsChecked = [];
 
   for (let index = 0; index < getSubjects.length; index += 1) {
-    if (getSubjects[index].classList.contains('checked')) {
+    if (getSubjects[index].firstElementChild.checked) {
       subjectsChecked.push(getSubjects[index].firstElementChild.value);
     }
   }
-  console.log(subjectsChecked);
 
   return subjectsChecked.join(', ');
 }
@@ -71,7 +70,7 @@ function getRateChecked() {
   let rateChecked;
 
   for (let index = 0; index < getRates.length; index += 1) {
-    if (getRates[index].classList.contains('checked')) {
+    if (getRates[index].firstElementChild.checked) {
       rateChecked = getRates[index].firstElementChild.value;
     }
   }
