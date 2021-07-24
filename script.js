@@ -6,6 +6,14 @@ const checkbox = document.getElementById('agreement');
 const textArea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 const getAgreement = document.querySelector('#agreement-container');
+const getInputName = document.getElementById('input-name');
+const getInputLastName = document.getElementById('input-lastname');
+const getInputEmail = document.getElementById('input-email');
+const getInputHouse = document.getElementById('house');
+const getFamilies = document.querySelectorAll('.family.checkbox');
+const getSubjects = document.querySelectorAll('.subject-div.checkbox');
+const getRates = document.querySelectorAll('.rate.checkbox');
+const getInputComment = document.getElementById('textarea');
 
 Submit.addEventListener('click', () => {
   if (Email.value === 'tryber@teste.com' && Senha.value === '123456') {
@@ -37,8 +45,6 @@ const labels = [
   'Avaliação:',
   'Observações:'];
 
-const getFamilies = document.querySelectorAll('.family.checkbox');
-
 function getFamilyChecked() {
   let familyChecked;
 
@@ -49,8 +55,6 @@ function getFamilyChecked() {
   }
   return familyChecked;
 }
-
-const getSubjects = document.querySelectorAll('.subject-div.checkbox');
 
 function getSubjectsChecked() {
   const subjectsChecked = [];
@@ -64,8 +68,6 @@ function getSubjectsChecked() {
   return subjectsChecked.join(', ');
 }
 
-const getRates = document.querySelectorAll('.rate.checkbox');
-
 function getRateChecked() {
   let rateChecked;
 
@@ -76,12 +78,6 @@ function getRateChecked() {
   }
   return rateChecked;
 }
-
-const getInputName = document.getElementById('input-name');
-const getInputLastName = document.getElementById('input-lastname');
-const getInputEmail = document.getElementById('input-email');
-const getInputHouse = document.getElementById('house');
-const getInputComment = document.getElementById('textarea');
 
 function createInputsObject() {
   const inputValue = [];
